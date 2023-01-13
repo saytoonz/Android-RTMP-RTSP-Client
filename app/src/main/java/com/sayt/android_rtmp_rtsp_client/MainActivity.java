@@ -30,7 +30,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
 
-public class MainActivity extends AppCompatActivity implements ConnectCheckerRtmp, AudioDecoderInterface, VideoDecoderInterface, SurfaceHolder.Callback, View.OnClickListener {
+public class MainActivity extends AppCompatActivity implements ConnectCheckerRtmp, SurfaceHolder.Callback, View.OnClickListener {
     private final String[] PERMISSIONS = {android.Manifest.permission.RECORD_AUDIO, android.Manifest.permission.CAMERA, android.Manifest.permission.WRITE_EXTERNAL_STORAGE};
     @RequiresApi(api = Build.VERSION_CODES.TIRAMISU)
     private final String[] PERMISSIONS_A_13 = {android.Manifest.permission.RECORD_AUDIO, android.Manifest.permission.CAMERA, Manifest.permission.POST_NOTIFICATIONS};
@@ -250,13 +250,4 @@ public class MainActivity extends AppCompatActivity implements ConnectCheckerRtm
         }
     }
 
-    @Override
-    public void onVideoDecoderFinished() {
-
-    }
-
-    @Override
-    public void onAudioDecoderFinished() {
-
-    }
 }
