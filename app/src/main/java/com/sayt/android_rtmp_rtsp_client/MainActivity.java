@@ -70,10 +70,10 @@ public class MainActivity extends AppCompatActivity implements ConnectCheckerRtm
 
     private void toggleAudio() {
         if (!rtmpCamera1.isAudioMuted()) {
-//            item.setIcon(getResources().getDrawable(R.drawable.icon_microphone_off));
+//          item.setIcon(getResources().getDrawable(R.drawable.icon_microphone_off));
             rtmpCamera1.disableAudio();
         } else {
-//            item.setIcon(getResources().getDrawable(R.drawable.icon_microphone));
+//          item.setIcon(getResources().getDrawable(R.drawable.icon_microphone));
             rtmpCamera1.enableAudio();
         }
     }
